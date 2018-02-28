@@ -24,8 +24,18 @@ if(animal.toLowerCase() === "alligator"){
     console.log("wide")
 }
 
-var yarn = "the better string";
-var domString = "<h4>" + yarn + "</h4>";
+// var yarn = "the better string";
+// var domString = "<h4>" + yarn + "</h4>";
 
-var myDiv = document.getElementByID('yarn-holder');
-myDiv.innerHTML = domString;
+// var myDiv = document.getElementByID('yarn-holder');
+// myDiv.innerHTML = domString;
+
+// Challenge #5
+
+var str = "IBMWLOVEbmcatsbmw";
+var cats = str.replace(/[BMWbmw]/g, '');
+
+console.log("cats", cats)
+var catStr = "<h1>" + cats + "</h1>"
+var catElement = document.getElementById('cat-holder');
+catElement.innerHTML = catStr;
